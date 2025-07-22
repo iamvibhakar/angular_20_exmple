@@ -1,0 +1,20 @@
+<div>
+  <h2>Count: {{ count }}</h2>
+  <button (click)="count += 1">Increment (+1)</button>
+  <button (click)="count -= 1">Decrement (-1)</button>
+  <button (click)="count *= multiplier">Multiply</button>
+  <button (click)="count **= 2">Square</button>
+</div>
+
+<div>
+  <h3>Message: {{ message }}</h3>
+  <button (click)="message ||= 'Hello, Angular!'">Set Message if Empty</button>
+  <button (click)="message &&= ''">Clear Message if Exists</button>
+</div>
+
+
+<div>
+  <h3>Condition: {{ condition }}</h3>
+  <button (click)="condition ??= true">Set if Undefined / Null</button>
+  <button (click)="condition &&= false">Reset if True</button>
+</div>
